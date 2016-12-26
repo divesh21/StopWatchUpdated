@@ -11,5 +11,23 @@
 @interface ViewController : UIViewController
 
 
+{
+    int tick,tick1,tick2;
+}
+
+- (IBAction)startBtn:(id)sender;
+
+- (IBAction)stopBtn:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UILabel *lbl1;
+
+@property (weak, nonatomic) IBOutlet UILabel *lbl2;
+
+@property (weak, nonatomic) IBOutlet UILabel *lbl3;
+
+@property(nonatomic,retain)NSTimer *timer;
+
+
+
 @end
 
