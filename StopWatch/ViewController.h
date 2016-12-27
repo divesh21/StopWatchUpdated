@@ -27,6 +27,7 @@
 
 @property(nonatomic,retain)NSTimer *timer;
 
+- (IBAction)Resetbtn:(id)sender;
 
 
 @end

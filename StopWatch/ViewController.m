@@ -28,11 +28,11 @@
 }
 
 - (IBAction)startBtn:(id)sender {
-    _timer=[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(calculatetime) userInfo:nil repeats:YES];
+    _timer=[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(stopWatchtimer) userInfo:nil repeats:YES];
     
 }
 
--(void)calculatetime
+-(void)stopWatchtimer
 {
     tick++;
     
@@ -63,6 +63,20 @@
     
     
     [_timer invalidate];
+    
+}
+- (IBAction)Resetbtn:(id)sender {
+    
+    
+    tick=0;
+    tick2=0;
+    tick1=0;
+    NSString *str2=@"00";
+    _lbl1.text=str2;
+    _lbl2.text=str2;
+    _lbl3.text=str2;
+    
+    
     
 }
 @end
